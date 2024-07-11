@@ -1,0 +1,110 @@
+---
+    import Gallery from "../components/Gallery.svelte";
+    import Layout from "../layouts/Layout.astro";
+    import pah1 from "../images/pixelarthelperui.png"
+    import pah2 from "../images/icon.png"
+    import ha1 from "../images/icon2.png"
+    import c1 from "../images/calamidle.png"
+    import c2 from "../images/calamidle2.png"
+    import c3 from "../images/calamidle3.png"
+    import app1 from "../images/sprites.png"
+    import app2 from "../images/levels.png"
+
+    let pixelArtHelperImages: string[] = [
+        pah1.src,
+        "https://github.com/Obbaxobax/PixelArtHelper/assets/70305616/17418840-7e20-4349-8e62-9a39521162ba",
+        pah2.src,
+        "https://youtube.com/embed/-tfU9xR9G4M"
+    ];
+
+    let funEImages: string[] = [
+        "https://github.com/Obbaxobax/FunE/raw/main/FunE/logo.png"
+    ]
+
+    let heartAttackImages: string[] = [
+        ha1.src
+    ]
+
+    let calamidleImages: string[] = [
+        c1.src,
+        c2.src,
+        c3.src
+    ]
+
+    let aPastPresentImages: string[] = [
+        app1.src,
+        app2.src,
+        "https://youtube.com/embed/_C4Bjrvhz8Y"
+    ]
+---
+
+<Layout>
+<div class="w-[90%] sm:w-[60%] h-full mx-auto flex flex-col">
+    <div class="flex flex-col items-center my-4">
+        <h1 class="text-3xl mb-2 text-bold text-blue-600 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
+            FunE
+        </h1>
+        <p class="text-lg bg-black bg-opacity-10 rounded-md p-2">
+            FunE is a discontinued desktop app coded entirely in Python. It's job was to detect games on a user's PC and allow them to launch all the games from within FunE.
+            The idea came from my friend Splefer, and he helped me to design the logo and was assisting in the creation of a better UI.
+            Unfortunately, the project became abandoned upon the discovery of another app which achieved the same thing, and difficulties with making the app in Python.
+            If it was still being made, future plans would include reorganizing the code into multiple files as well as moving away from dearpygui towards Reflex. <br>
+            <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/FunE">Github</a>
+        </p>
+        <Gallery client:only="svelte" context={["FunE logo"]} imageURLs={funEImages} />
+    </div>
+    <div class="flex flex-col items-center my-4">
+        <h1 class="text-3xl mb-2 text-bold text-fuchsia-900 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
+            PixelArtHelper
+        </h1>
+        <p class="text-lg bg-black bg-opacity-10 rounded-md p-2">
+            PixelArtHelper is a mod coded in C# with .Net for the popular game Terraria. 
+            It purpose is to give players and easier means of making in-game PixelArtHelper using items from the game.
+            This is achieved by taking an image as input, scaling it to the desired size, 
+            then comparing each of the pixels to determine which in-game tile best matches the color of the pixel. <br>
+            <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/PixelArtHelper">Github</a>
+        </p>
+        <Gallery client:only="svelte" context={["The Ingame UI", "An example of the the being used.", "Logo used for the in game mod menus."]} imageURLs={pixelArtHelperImages} />
+    </div>
+    <div class="flex flex-col items-center my-4">
+        <h1 class="text-3xl mb-2 text-bold text-pink-800 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
+            Heart Attack
+        </h1>
+        <p class="text-lg bg-black bg-opacity-10 rounded-md p-2">
+            Similar to PixelArtHelper, Heart Attack is also a mod made for Terraria.
+            It communicates with the Health Data Server Apple Watch app through a web-socket and uses the supplied heartrate to interact with the game.
+            More specifically, if the heartrate exceeds and threshold which can be changed by the user, the mod will kill the player.
+            It comes with configuration options which give the player a desirable experience. (As desirable as it can be) <br>
+            <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/HeartAttack">Github</a>
+        </p>
+        <Gallery client:only="svelte" context={["Logo used for the in game mod menus."]} imageURLs={heartAttackImages} />
+    </div>
+    <div class="flex flex-col items-center my-4 ">
+        <h1 class="text-3xl mb-2 text-bold text-red-700 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
+            Calamidle
+        </h1>
+        <p class="text-lg bg-black bg-opacity-10 rounded-md p-2">
+            Calamidle is a wordle like game inspired by a similar game by the name <a class="text-green-500" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8); font-weight: 500;"  href="https://terradle.com">Terradle.</a>
+            Created using Svelte, Tailwind, and Typescript, it involves guessing weapons from the largest Terraria mod, Calamity, to try and find the correct one.
+            It compares the stats of the guessed weapon with the correct one and tells the player if the values are correct or not.
+            It allows provides the user with three hints, which are individually unlocked after a certain number of guesses.
+            The game can be found here: <a class="text-red-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8); font-weight: 500;" href="https://calamidle.vercel.app">Calamidle</a> <br>
+            <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/Calamidle">Github</a>
+        </p>
+        <Gallery client:only="svelte" context={["", "Answer popup", "Hints"]} imageURLs={calamidleImages} />
+    </div>
+    <div class="flex flex-col items-center my-4 ">
+        <h1 class="text-3xl mb-2 text-bold text-amber-600 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
+            A Past Present
+        </h1>
+        <p class="text-lg bg-black bg-opacity-10 rounded-md p-2">
+            A game made in The Unity Game Engine for a school project.
+            It is a top-down shooter inspired by Enter the Gungeon.
+            All of it's code is written by me in C#. 
+            This project is around two years old, so some of the methods used are not the methods I would use now.
+            The original game pitch can be found in the read me on the github. <br>
+            <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/A-Past-Present">Github</a>
+        </p>
+        <Gallery client:only="svelte" context={["Some of the sprites.", "Some completed levels in Unity."]} imageURLs={aPastPresentImages} />
+    </div>
+</div>

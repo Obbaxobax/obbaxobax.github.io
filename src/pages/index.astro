@@ -1,0 +1,93 @@
+---
+	import me from "../images/me+friend.jpeg";
+	import Layout from "../layouts/Layout.astro";
+	import Discord from "../components/SVGs/discord.astro";
+	import Github from "../components/SVGs/github.astro";
+	import Youtube from "../components/SVGs/youtube.astro";
+	import X from "../components/SVGs/x.astro";
+	import Reddit from "../components/SVGs/reddit.astro";
+---
+
+<Layout>
+<div class="h-fit sm:h-full w-[99%] mb-8 mx-auto mt-2 flex flex-col items-center">
+	<div class="w-[99%] flex flex-row">
+		<h1
+			class="w-fit p-2 bg-black bg-opacity-10 text-3xl font-medium rounded-t-md"
+		>
+			Who Am I?
+		</h1>
+	</div>
+	<div class="h-full w-[99%] flex flex-col space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4">
+		<div
+			class="p-2 bg-black bg-opacity-10 rounded-md rounded-tl-none"
+		>
+			<p class="text-lg" style="font-family: heebo;">
+				Hello! I am Nicholas, known to many as Nich or by my username,
+				Obbax. I am a high school graduate and avid programmer, often
+				programming during my free time. When not programming, I spend
+				my time either watching YouTube, watching Anime, talking with my
+				friends on Discord, or playing Video Games. Some of the games I
+				enjoy playing are many of the games in the Legend of Zelda
+				series, as well as, many FPS games. I am also particularly fond
+				of puzzles, which extends to puzzle games. However, if I had to
+				pick my all time favourite game, I would probably choose
+				Terraria with mods. <br>
+				<br>
+				Moving away from my hobbies, I consider myself to be a good
+				learner, in the sense that I can absorb information rather
+				easily. In addition, I have a hint of perfectionism being
+				unwilling to move on from whatever I am working on until it
+				meets my reasonably high standards. Of course, I am also a
+				hard-worker, and I am typically able to finish anything I put my
+				mind to.
+			</p>
+		</div>
+		<div
+			class="min-w-[30vw] px-2 pt-2 bg-black bg-opacity-10 rounded-md"
+		>
+			<img class="rounded-md" src={me.src} alt="test" />
+			<p class="text-center text-base my-1">
+				Me (left) with my close friend (right).
+			</p>
+		</div>
+	</div>
+	<div class="w-[99%] mt-5 py-3 flex flex-row justify-center bg-black bg-opacity-10 rounded-md text-2xl font-semibold leading-relaxed">
+        <ul class="flex flex-col gap-2">
+            <li class="inline-flex">
+                <Discord/>
+                <p class="min-w-24 mr-5">Discord</p>
+                <p class="px-2 bg-black bg-opacity-10 rounded-xl">
+                        Obbax
+				</p>
+            </li>
+            <li class="inline-flex">
+                <Github/>
+                <p class="min-w-24 mr-5">Github</p>
+                <a href="https://github.com/Obbaxobax" class="px-2 bg-black bg-opacity-10 rounded-xl">
+                        Obbaxobax
+                </a>
+            </li>
+            <li class="inline-flex">
+                <Youtube/>
+                <p class="min-w-24 mr-5">Youtube</p>
+                <a href="www.youtube.com/@obbaxobax" class="px-2 bg-black bg-opacity-10 rounded-xl">
+                        @obbaxobax
+                </a>
+            </li>
+            <li class="inline-flex">
+                <X/>
+                <p class="min-w-24 mr-5">X</p>
+                <a href="https://x.com/Obbaxobax" class="px-2 bg-black bg-opacity-10 rounded-xl">
+                        Obbaxobax
+                </a>
+            </li>
+            <li class="inline-flex">
+                <Reddit/>
+                <p class="min-w-24 mr-5">Reddit</p>
+                <a href="https://www.reddit.com/user/Obbax_obax/" class="px-2 bg-black bg-opacity-10 rounded-xl">
+                        Obbax_obax
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
