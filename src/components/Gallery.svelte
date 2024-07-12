@@ -32,7 +32,7 @@
             {#key index}
                 <img class="max-h-[304px] {context[index] && context[index] != "" ? "h-[276px]" : "h-full"}" src="{imageURLs[index]}" alt="not found"/>
                 {#if context[index] && context[index] != ""}
-                    <p class="h-7 px-1 pb-1 rounded-b-md bg-black bg-opacity-10 text-center">
+                    <p class="h-7 px-1 pb-1 rounded-b-md bg-black bg-opacity-20 text-center">
                         {context[index]}
                     </p>
                 {/if}
