@@ -9,6 +9,11 @@
     import c3 from "../images/calamidle3.png"
     import app1 from "../images/sprites.png"
     import app2 from "../images/levels.png"
+    import ob from "../images/ObbaxBoard.png"
+
+    let obbaxBoardImages: string[] = [
+        ob.src
+    ]
 
     let pixelArtHelperImages: string[] = [
         pah1.src,
@@ -40,6 +45,19 @@
 
 <Layout>
 <div class="w-[95%] sm:w-[60%] h-full mx-auto flex flex-col">
+    <div class="flex flex-col items-center my-4">
+        <h1 class="text-3xl mb-2 text-bold text-green-600 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
+            ObbaxBoard
+        </h1>
+        <p class="text-sm sm:text-lg bg-black bg-opacity-10 rounded-md p-2">
+            ObbaxBoard is a desktop application made using Tauri with a Svelte frontend and Rust backend. Its purpose was to provide a simple 
+            but effective soundboard for many use cases. As it stands, it lacks many features which are present in other soundboards, 
+            but I have plans to potentially extend its functionality. One further addition that I am likely to add is the ability to 
+            set the output device in app to avoid having to do so manually through windows settings. <br>
+            <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/ObbaxBoard">Github</a>
+        </p>
+        <Gallery client:only="svelte" context={["The App UI"]} imageURLs={obbaxBoardImages} />
+    </div>
     <div class="flex flex-col items-center my-4">
         <h1 class="text-3xl mb-2 text-bold text-blue-600 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
             FunE
