@@ -1,7 +1,7 @@
 {
-  "name": "proto-planet",
+  "name": "obbaxobax.github.io",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.2",
-    "@astrojs/svelte": "^7.0.13",
-    "@astrojs/tailwind": "^6.0.2",
-    "astro": "^5.7.12",
+    "@astrojs/svelte": "^9.1.5",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.11",
+    "postcss": "^8.5.32",
     "svelte": "^5.1.16",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^4.3.5",
     "typescript": "^5.5.3"
   }
 }

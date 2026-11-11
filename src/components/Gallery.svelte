@@ -19,8 +19,8 @@
 
 
 
-<div class="w-full sm:w-[95%] h-fit bg-black bg-opacity-10 mt-2 flex flex-row rounded-md items-center {Class}">
-    <button class="{imageURLs.length == 1 ? "bg-opacity-10 bg-slate-500 text-gray-700" : "bg-opacity-25 bg-white"} w-10 h-[230px] sm:h-80 mr-2 rounded-l-md button" on:click={() => nextImage(-1)}>{"\<"}</button>
+<div class="w-full sm:w-[95%] h-fit bg-black/10 mt-2 flex flex-row rounded-md items-center {Class}">
+    <button class="{imageURLs.length == 1 ? "bg-slate-500/10 text-gray-700" : "bg-white/25"} w-10 h-[230px] sm:h-80 mr-2 rounded-l-md button" on:click={() => nextImage(-1)}>{"\<"}</button>
     {#if imageURLs[index].includes("youtube.com")}
         <div class="h-[190px] sm:h-80 mx-auto py-2 flex flex-col justify-center">
             {#key index}
@@ -32,14 +32,14 @@
             {#key index}
                 <img class="max-h-[190px] sm:max-h-[304px] {context[index] && context[index] != "" ? "h-[142px] sm:h-[276px]" : "h-full"}" src="{imageURLs[index]}" alt="not found"/>
                 {#if context[index] && context[index] != ""}
-                    <p class="h-fit px-1 pb-1 rounded-b-md bg-black bg-opacity-20 text-center">
+                    <p class="h-fit px-1 pb-1 rounded-b-md bg-black/20 text-center">
                         {context[index]}
                     </p>
                 {/if}
             {/key}
         </div>
     {/if}
-    <button class="{imageURLs.length == 1 ? "bg-opacity-10 bg-slate-500 text-gray-700" : "bg-opacity-25 bg-white"} w-10 h-[230px] sm:h-80 ml-2 rounded-r-md" on:click={() => nextImage(1)}>{"\>"}</button>
+    <button class="{imageURLs.length == 1 ? "bg-slate-500/10 text-gray-700" : "bg-white/25"} w-10 h-[230px] sm:h-80 ml-2 rounded-r-md" on:click={() => nextImage(1)}>{"\>"}</button>
 </div>
 <slot/>
 
