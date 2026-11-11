@@ -55,8 +55,8 @@
             but I have plans to potentially extend its functionality. One further addition that I am likely to add is the ability to 
             set the output device in app to avoid having to do so manually through windows settings. <br>
             <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/ObbaxBoard">Github</a>
+            <Gallery client:only="svelte" context={["The App UI"]} imageURLs={obbaxBoardImages} />
         </p>
-        <Gallery client:only="svelte" context={["The App UI"]} imageURLs={obbaxBoardImages} />
     </div>
     <div class="flex flex-col items-center my-4">
         <h1 class="text-3xl mb-2 text-bold text-blue-600 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
@@ -68,8 +68,8 @@
             Unfortunately, the project became abandoned upon the discovery of another app which achieved the same thing, and difficulties with making the app in Python.
             If it was still being made, future plans would include reorganizing the code into multiple files as well as moving away from dearpygui towards Reflex. <br>
             <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/FunE">Github</a>
+            <Gallery client:only="svelte" context={["FunE logo"]} imageURLs={funEImages} />
         </p>
-        <Gallery client:only="svelte" context={["FunE logo"]} imageURLs={funEImages} />
     </div>
     <div class="flex flex-col items-center my-4">
         <h1 class="text-3xl mb-2 text-bold text-fuchsia-900 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
@@ -81,8 +81,8 @@
             This is achieved by taking an image as input, scaling it to the desired size, 
             then comparing each of the pixels to determine which in-game tile best matches the color of the pixel. <br>
             <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/PixelArtHelper">Github</a>
+            <Gallery client:only="svelte" context={["The Ingame UI", "An example of the the being used.", "Logo used for the in game mod menus."]} imageURLs={pixelArtHelperImages} />
         </p>
-        <Gallery client:only="svelte" context={["The Ingame UI", "An example of the the being used.", "Logo used for the in game mod menus."]} imageURLs={pixelArtHelperImages} />
     </div>
     <div class="flex flex-col items-center my-4">
         <h1 class="text-3xl mb-2 text-bold text-pink-800 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
@@ -94,33 +94,19 @@
             More specifically, if the heartrate exceeds and threshold which can be changed by the user, the mod will kill the player.
             It comes with configuration options which give the player a desirable experience. (As desirable as it can be) <br>
             <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/HeartAttack">Github</a>
+            <Gallery client:only="svelte" context={["Logo used for the in game mod menus."]} imageURLs={heartAttackImages} />
         </p>
-        <Gallery client:only="svelte" context={["Logo used for the in game mod menus."]} imageURLs={heartAttackImages} />
     </div>
     <div class="flex flex-col items-center my-4 ">
         <h1 class="text-3xl mb-2 text-bold text-red-700 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
             Calamidle
         </h1>
         <p class="text-sm sm:text-lg bg-black bg-opacity-10 rounded-md p-2">
-            <b>Deleted because of horrible actions regarding Calamity Mod's lead developer and the resulting cease of development</b> <br>
             Calamidle is a wordle like game inspired by a similar game by the name <a class="text-green-500" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8); font-weight: 500;"  href="https://terradle.com">Terradle.</a>
             Created using Svelte, Tailwind, and Typescript, it involves guessing weapons from the largest Terraria mod, Calamity, to try and find the correct one.
             It compares the stats of the guessed weapon with the correct one and tells the player if the values are correct or not.
             It allows provides the user with three hints, which are individually unlocked after a certain number of guesses.
-        <Gallery client:only="svelte" context={["", "Answer popup", "Hints"]} imageURLs={calamidleImages} />
-    </div>
-    <div class="flex flex-col items-center my-4 ">
-        <h1 class="text-3xl mb-2 text-bold text-amber-600 bg-black bg-opacity-10 rounded-t-md p-1 translate-y-2" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);">
-            A Past Present
-        </h1>
-        <p class="text-sm sm:text-lg bg-black bg-opacity-10 rounded-md p-2">
-            A game made in The Unity Game Engine for a school project.
-            It is a top-down shooter inspired by Enter the Gungeon.
-            All of it's code is written by me in C#. 
-            This project is around two years old, so some of the methods used are not the methods I would use now.
-            The original game pitch can be found in the read me on the github. <br>
-            <a class="text-blue-700" style="text-shadow: 0px 1.2px 1.2px rgba(0, 0, 0, 0.8);" href="https://github.com/Obbaxobax/A-Past-Present">Github</a>
+            <Gallery client:only="svelte" context={["", "Answer popup", "Hints"]} imageURLs={calamidleImages} />
         </p>
-        <Gallery client:only="svelte" context={["Some of the sprites.", "Some completed levels in Unity."]} imageURLs={aPastPresentImages} />
     </div>
 </div>
